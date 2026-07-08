@@ -59,3 +59,114 @@ Category → Department
   - FOODS_3
 
 The M5 dataset consists of five files: calendar, sales, sell prices, sample submission, and evaluation data. The sales dataset contains 30,490 products with daily sales records across 1,913 days. The data follows a hierarchical structure from state → store → category → department → item, making it suitable for retail demand forecasting and inventory optimization. The calendar dataset provides event and seasonal information, while the sell prices dataset enables price-based demand analysis.
+
+# DAY-1 : Phase 2- Retail Demand Forecasting & Inventory Optimization
+
+This project focuses on forecasting retail product demand and supporting inventory optimization using the Walmart M5 Forecasting dataset. Historical sales, pricing information, calendar events, and seasonal patterns are analyzed to understand customer demand behavior and improve inventory planning decisions.
+
+The project aims to build a data-driven forecasting pipeline that identifies demand trends across stores, categories, and departments. By leveraging time-series analysis and machine learning techniques, the solution helps reduce stockout risks, minimize excess inventory, and improve supply chain efficiency.
+
+**Tools & Technologies:** Python, Pandas, NumPy, SQL, PostgreSQL, Power BI, Prophet, ARIMA, LightGBM, Matplotlib, Seaborn
+
+## Phase 2 - Data Understanding & Business Understanding
+
+### Objectives
+- Understand the structure of the Walmart M5 Forecasting dataset.
+- Identify datasets required for demand forecasting.
+- Explore product hierarchy, store structure, and sales data characteristics.
+- Assess data quality before starting the cleaning phase.
+
+### Tasks Completed
+
+#### Dataset Exploration
+Loaded and analyzed the following datasets:
+
+- calendar.csv
+- sales_train_validation.csv
+- sell_prices.csv
+- sample_submission.csv
+- sales_train_evaluation.csv
+
+Dataset Shapes:
+
+| Dataset | Rows | Columns |
+|----------|--------:|---------:|
+| Calendar | 1,969 | 14 |
+| Sales Train Validation | 30,490 | 1,919 |
+| Sell Prices | 6,841,121 | 4 |
+| Sample Submission | 60,980 | 29 |
+| Sales Evaluation | 30,490 | 1,947 |
+
+#### Business Understanding
+
+Identified the hierarchical structure used by Walmart:
+
+State → Store → Category → Department → Product
+
+Categories discovered:
+- FOODS
+- HOUSEHOLD
+- HOBBIES
+
+Departments discovered:
+- FOODS_1
+- FOODS_2
+- FOODS_3
+- HOBBIES_1
+- HOBBIES_2
+- HOUSEHOLD_1
+- HOUSEHOLD_2
+
+#### Store Analysis
+
+Total States:
+- CA (California)
+- TX (Texas)
+- WI (Wisconsin)
+
+Total Stores:
+- 10 Stores
+
+Store IDs:
+- CA_1, CA_2, CA_3, CA_4
+- TX_1, TX_2, TX_3
+- WI_1, WI_2, WI_3
+
+#### Product Analysis
+
+- Total Unique Products: 3,049
+- Total Product-Store Combinations: 30,490
+- Total Historical Sales Days: 1,913
+
+Category Distribution:
+
+- FOODS: 14,370
+- HOUSEHOLD: 10,470
+- HOBBIES: 5,650
+
+#### Calendar Analysis
+
+Historical date range:
+
+29-Jan-2011 to 19-Jun-2016
+
+Event-related columns contain missing values because events occur only on selected dates. These missing values represent the absence of events rather than data quality issues.
+
+#### Sales Statistics
+
+Initial statistical analysis revealed:
+
+- No missing values in sales records.
+- Large number of zero-sales observations.
+- Significant variation between products.
+- Presence of intermittent demand patterns, which is common in retail forecasting datasets.
+
+### Key Findings
+
+- Main forecasting dataset identified: `sales_train_validation.csv`
+- Supporting datasets: `calendar.csv` and `sell_prices.csv`
+- Competition-specific datasets (`sample_submission.csv` and `sales_train_evaluation.csv`) are not required for the portfolio project.
+- Data follows a hierarchical retail structure suitable for demand forecasting and inventory optimization.
+- Dataset contains over five years of historical sales data, making it suitable for time-series forecasting.
+
+---
