@@ -170,3 +170,38 @@ Initial statistical analysis revealed:
 - Dataset contains over five years of historical sales data, making it suitable for time-series forecasting.
 
 ---
+
+# DAY :- 2
+## Phase 3 - Data Cleaning & Data Quality Checks
+
+Completed the initial data cleaning phase of the Retail Demand Forecasting & Inventory Optimization project. Converted date fields into proper datetime format for future time-series analysis and forecasting. Performed detailed memory usage analysis across all datasets and optimized categorical columns to improve processing efficiency.
+
+A major optimization was achieved in the sell_prices dataset, reducing memory consumption from approximately 853 MB to 124 MB by converting repetitive string columns into categorical datatypes. Missing values were analyzed and validated as expected business-driven nulls related to event information. Duplicate record checks were performed on all datasets, and no duplicate records were found.
+
+The datasets are now cleaned, validated, and ready for preprocessing, transformation, and dataset integration steps required for forecasting and inventory optimization.
+
+### Data Cleaning Summary
+
+## Tasks Completed
+
+- Reloaded all required datasets.
+- Converted date column to datetime format.
+- Checked dataset memory usage.
+- Performed memory optimization using categorical datatypes.
+- Reduced sell_prices dataset memory from 853 MB to 124 MB.
+- Verified data types across all datasets.
+- Assessed missing values in calendar event columns.
+- Confirmed that event-related null values represent non-event days.
+- Performed duplicate record checks.
+- No duplicate records were found in any dataset.
+
+## Key Outcomes
+
+- Date column successfully converted for time-series analysis.
+- Significant memory reduction achieved in the prices dataset.
+- Data quality checks completed.
+- No duplicate records detected.
+- Dataset is now ready for preprocessing and transformation.
+
+---
+
