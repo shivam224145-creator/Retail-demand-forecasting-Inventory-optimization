@@ -205,3 +205,28 @@ The datasets are now cleaned, validated, and ready for preprocessing, transforma
 
 ---
 
+# Day 3- PHASE- 4:- Data Preprocessing
+
+### Data Preprocessing & Feature Integration – FOODS_1 Department
+
+Today, the preprocessing pipeline for the FOODS_1 department was successfully completed. The objective was to transform raw retail sales data into a forecasting-ready time series dataset suitable for demand forecasting and inventory optimization.
+
+The sales dataset was first filtered to include only the FOODS_1 department. Since the original sales data was stored in a wide format with daily sales spread across thousands of columns (d_1 to d_1913), it was converted into a long-format structure using the pd.melt() function. This transformation produced a time-series friendly dataset containing over 4.1 million records.
+
+The transformed sales data was then merged with the calendar dataset to map each day identifier (d) to its actual date and corresponding retail week (wm_yr_wk). This step enabled proper temporal analysis and future forecasting activities.
+
+Next, the pricing dataset was integrated using a composite key consisting of store_id, item_id, and wm_yr_wk. This allowed historical selling prices to be attached to each sales transaction. During validation, approximately 14.55% of price values were found to be missing. Further investigation confirmed that these missing values were caused by unavailable historical pricing records in the source dataset rather than merge errors.
+
+A complete quality assessment was performed, including dataset shape validation, memory usage inspection, descriptive statistics, and missing value analysis. The final processed dataset contained sales, calendar, and pricing information in a unified structure.
+
+### Final Processed Dataset
+- Department: FOODS_1
+- Rows: 4,132,080
+- Columns: 11
+- File Size: ~366 MB
+- Missing Sales Values: 0
+- Missing Price Values: 601,342 (14.55%)
+
+### Key Learning
+
+This phase demonstrated how large-scale retail data can be transformed from a transactional format into a forecasting-ready dataset while preserving business-critical information such as pricing and calendar effects. The validated preprocessing pipeline will now be reused for the remaining retail departments to build a complete forecasting dataset.
