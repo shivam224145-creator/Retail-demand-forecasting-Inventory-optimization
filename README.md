@@ -205,7 +205,7 @@ The datasets are now cleaned, validated, and ready for preprocessing, transforma
 
 ---
 
-# Day 3- PHASE- 4:- Data Preprocessing
+# Day 3- PHASE- 4:- Data Preprocessing[Part-1]
 
 ### Data Preprocessing & Feature Integration – FOODS_1 Department
 
@@ -230,3 +230,45 @@ A complete quality assessment was performed, including dataset shape validation,
 ### Key Learning
 
 This phase demonstrated how large-scale retail data can be transformed from a transactional format into a forecasting-ready dataset while preserving business-critical information such as pricing and calendar effects. The validated preprocessing pipeline will now be reused for the remaining retail departments to build a complete forecasting dataset.
+
+---
+
+# Day 4- PHASE- 4:- Data Preprocessing[Part-2]
+
+## Department-Wise Data Processing Pipeline Completion
+
+### Department-Wise Data Processing Completed
+- Created a reusable preprocessing function for all departments.
+- Converted sales data from wide format to long format using pd.melt().
+- Merged sales data with calendar information (date, wm_yr_wk).
+- Integrated historical pricing data using store_id, item_id, and wm_yr_wk.
+
+### Applied the pipeline to all remaining departments:-
+- FOODS_2
+- FOODS_3
+- HOUSEHOLD_1
+- HOUSEHOLD_2
+- HOBBIES_1
+- HOBBIES_2
+Exported department-wise processed datasets to the processed folder.
+Validated dataset shapes, columns, and successful file generation.
+
+### Final Dataset Statistics
+### Department	      Rows	   Columns
+- FOODS_1_processed	4,132,080	   11
+- FOODS_2_processed	7,613,740	   11
+- FOODS_3_processed	15,743,990	 11
+- HOUSEHOLD_1_processed	10,177,160	11
+- HOUSEHOLD_2_processed	9,851,950	11
+- HOBBIES_1_processed	7,958,080	 11
+- HOBBIES_2_processed	2,850,370	 11
+
+### Key Achievement
+
+Successfully processed and validated more than 58 million retail transaction records, creating forecasting-ready datasets that will be used in the next phase for feature engineering, demand forecasting, and inventory optimization.
+
+### Outcome:-
+Successfully generated forecasting-ready datasets for all 7 retail departments containing sales, calendar, and pricing information.
+
+---
+
