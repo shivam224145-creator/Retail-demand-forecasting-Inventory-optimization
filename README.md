@@ -272,3 +272,87 @@ Successfully generated forecasting-ready datasets for all 7 retail departments c
 
 ---
 
+# Day 5- Phase-5 :- Feature Engineering FOODS1 [Part 1]
+
+### Feature Engineering – FOODS_1 Department
+
+In this phase, forecasting-oriented features were created from the processed FOODS_1 dataset. The goal was to transform raw sales data into a machine-learning-ready dataset capable of capturing seasonality, demand trends, historical behavior, and price impact.
+
+The date column was converted into datetime format and multiple calendar features such as year, month, day_of_week, and weekend_flag were generated. These features help identify weekly and seasonal demand patterns.
+
+To incorporate historical demand information, lag features (7, 14, and 28 days) were created. Rolling mean features were then generated to capture short-term and long-term sales trends. Additionally, rolling standard deviation features were added to measure demand volatility and variability across different time windows.
+
+A price_change_pct feature was also created to monitor product price fluctuations and study their impact on sales demand.
+
+After feature generation, the dataset was validated through shape checks, null value analysis, and feature verification. The final dataset expanded from 11 columns to 25 columns and was saved as a feature-engineered dataset for future forecasting and inventory optimization tasks.
+
+This notebook serves as a validated feature engineering workflow that can later be applied to the remaining departments using the same reusable pipeline.
+
+## Feature Engineering Summary (FOODS_1)
+
+## Objective
+The objective of this notebook was to create forecasting-ready features from the processed FOODS_1 dataset. These features help machine learning and time-series forecasting models capture seasonality, demand patterns, trends, and price behavior.
+
+## Dataset Information
+
+- Department: FOODS_1
+- Total Records: 4,132,080
+- Original Columns: 11
+- Final Columns: 25
+
+## Features Created
+
+### 1. Calendar Features
+- year
+- month
+- day_of_week
+- weekend_flag
+
+Purpose:
+Capture seasonal patterns, monthly demand variations, and weekend purchasing behavior.
+
+### 2. Lag Features
+- sales_lag_7
+- sales_lag_14
+- sales_lag_28
+
+Purpose:
+Provide historical sales information from previous periods to improve forecasting accuracy.
+
+### 3. Rolling Mean Features
+- rolling_mean_7
+- rolling_mean_14
+- rolling_mean_28
+
+Purpose:
+Capture short-term and long-term sales trends using moving averages.
+
+### 4. Price Feature
+- price_change_pct
+
+Purpose:
+Measure percentage change in product price over time and analyze its impact on demand.
+
+### 5. Rolling Standard Deviation Features
+- rolling_std_7
+- rolling_std_14
+- rolling_std_28
+
+Purpose:
+Measure demand volatility and sales variability across different time windows.
+
+## Data Validation
+
+- Shape Verified
+- Feature Creation Verified
+- Null Values Checked
+- Lag Features Validated
+- Rolling Features Validated
+- Price Features Validated
+
+## Output
+
+Feature-engineered dataset successfully created and saved for forecasting and inventory optimization modeling.
+
+---
+
