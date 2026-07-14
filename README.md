@@ -356,3 +356,80 @@ Feature-engineered dataset successfully created and saved for forecasting and in
 
 ---
 
+# Day 6- Phase-6 :- Time Series EDA & Forecasting Phase
+## Forecasting EDA & Prophet Dataset Preparation
+### Tasks Completed
+- Aggregated daily sales data from FOODS_1 department.
+- Performed monthly and yearly trend analysis.
+- Identified seasonality patterns in sales.
+- Conducted weekday/weekend demand analysis.
+- Visualized sales distribution using histogram and KDE plots.
+- Detected outliers using boxplots.
+- Validated forecasting suitability through trend and seasonality checks.
+- Prepared Prophet-compatible dataset (ds, y format).
+- Verified no missing values in forecasting dataset.
+- Saved final forecasting-ready dataset.
+
+### Key Insights
+- Sales show a clear upward trend.
+- December is the highest-performing month.
+- Weekend demand is significantly higher than weekday demand.
+- Saturday has the highest average sales.
+- Dataset contains sufficient historical observations (1,913 days) for forecasting.
+
+### Time Series EDA & Prophet Dataset Preparation Summary
+
+## Objective
+The objective of this notebook was to analyze the sales behavior of the FOODS_1 department before building a forecasting model and to prepare a clean dataset for Prophet forecasting.
+
+## Work Completed
+
+### 1. Daily Sales Aggregation
+- Aggregated item-level sales into daily sales.
+- Created a time series dataset with 1,913 daily observations.
+- Verified there were no missing dates or missing sales values.
+
+### 2. Trend Analysis
+- Analyzed monthly and yearly sales trends.
+- Observed a clear upward sales trend from 2011 to 2015.
+- Identified business growth over time.
+
+### 3. Seasonality Analysis
+- Monthly sales patterns showed recurring fluctuations.
+- Highest sales month: December 2015.
+- Seasonal demand patterns were visible in the data.
+
+### 4. Day-wise Sales Analysis
+- Compared average sales across weekdays.
+- Saturday recorded the highest average demand.
+- Monday recorded the lowest average demand.
+- Confirmed a strong weekend effect.
+
+### 5. Distribution Analysis
+- Examined sales distribution using histogram and density plots.
+- Most daily sales values were concentrated between 2,000 and 3,500 units.
+- Sales distribution was slightly right-skewed.
+
+### 6. Outlier Analysis
+- Used boxplots to identify unusual sales spikes.
+- Found a few high-demand periods, which are normal for retail sales.
+
+### 7. Prophet Dataset Preparation
+- Converted dataset into Prophet format:
+    - ds = Date
+    - y = Sales
+- Created a clean forecasting dataset with no missing values.
+- Saved the final dataset for model training.
+
+## Key Findings
+- Upward sales trend exists.
+- Seasonality exists.
+- Weekend effect exists.
+- Forecasting is suitable for this dataset.
+- Prophet can be used as the forecasting model.
+
+## Output File
+foods_1_prophet_ready.csv
+
+---
+
