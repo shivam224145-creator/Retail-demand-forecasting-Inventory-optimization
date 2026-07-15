@@ -433,3 +433,36 @@ foods_1_prophet_ready.csv
 
 ---
 
+# Day 7- Phase-7 :- Prophet Forecasting Phase
+
+### Completed Tasks
+
+- Loaded FOODS_1 feature engineered dataset
+- Aggregated sales at daily level
+- Converted data into Prophet format (ds, y)
+- Performed time-based train-test split
+- Trained Facebook Prophet forecasting model
+- Generated future demand predictions
+- Evaluated model performance
+
+### Model Performance
+
+- MAE: 368.30
+- RMSE: 472.83
+- MAPE: 12.95%
+
+### Insights
+
+- Strong weekly seasonality detected
+- Weekend sales higher than weekdays
+- Stable long-term upward demand trend
+- Prophet captured trend and seasonality effectively
+
+### Status
+- Prophet Baseline Model Completed
+
+### Conclusion
+The Prophet model achieved good forecasting performance and is suitable as the baseline forecasting model for retail demand prediction.
+
+---
+
