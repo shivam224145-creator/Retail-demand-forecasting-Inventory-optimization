@@ -466,3 +466,37 @@ The Prophet model achieved good forecasting performance and is suitable as the b
 
 ---
 
+# Day 8- Phase-8 :- LightGBM Forecasting Model Phase
+## LightGBM Forecasting – FOODS_1
+
+### Work Completed
+- Loaded FOODS_1 Prophet-ready dataset.
+- Prepared forecasting feature set.
+- Applied time-series train-test split.
+- Trained LightGBM Regressor model.
+- Generated 30-day sales predictions.
+- Evaluated forecasting performance.
+- Created Actual vs Predicted comparison table.
+- Saved prediction results for future analysis.
+
+### Features Used
+- Time Features
+- Lag Features
+- Rolling Mean Features
+- Rolling Standard Deviation Features
+- Weekend Indicator
+
+### Results
+- MAE: 234.92
+- RMSE: 328.54
+- MAPE: 7.41%
+- Forecast Accuracy: 92.59%
+
+### Key Insight
+LightGBM achieved significantly better forecasting performance than Prophet and is currently the best-performing model for FOODS_1 demand forecasting.
+
+### Output
+- foods_1_lightgbm_predictions.csv
+
+---
+
