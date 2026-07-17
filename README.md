@@ -500,3 +500,37 @@ LightGBM achieved significantly better forecasting performance than Prophet and 
 
 ---
 
+# ARIMA Forecasting - FOODS_1 Department
+
+## Objective
+The objective of this notebook was to build a time-series forecasting model using ARIMA (AutoRegressive Integrated Moving Average) for the FOODS_1 department and evaluate its forecasting performance on unseen sales data.
+
+## Work Completed
+- Loaded the Prophet-ready FOODS_1 dataset.
+- Verified data quality and date continuity.
+- Performed stationarity testing using the Augmented Dickey-Fuller (ADF) test.
+- Split the dataset into training and testing periods.
+- Applied Auto ARIMA to identify the optimal (p, d, q) parameters.
+- Trained the ARIMA model on historical sales data.
+- Generated forecasts for the test period.
+- Compared actual and predicted sales values.
+- Evaluated forecasting performance using MAE, RMSE, MAPE, and Forecast Accuracy.
+
+## Key Results
+- Best ARIMA Order: (5, 1, 2)
+- Forecast Accuracy: 69.89%
+- MAPE: 30.11%
+- RMSE: 888.76
+- MAE: 845.89
+
+## Observations
+- ARIMA successfully captured the overall sales trend.
+- Forecasts were less accurate compared to machine learning approaches.
+- Higher forecasting errors were observed during sales fluctuations and demand spikes.
+- The model showed limitations in handling complex seasonal patterns.
+
+## Conclusion
+ARIMA provided a baseline forecasting benchmark for the FOODS_1 department. Although it generated reasonable forecasts, its performance was significantly lower than Prophet and LightGBM. Therefore, ARIMA was not selected as the final production forecasting model for this project.
+
+---
+
