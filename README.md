@@ -534,3 +534,57 @@ ARIMA provided a baseline forecasting benchmark for the FOODS_1 department. Alth
 
 ---
 
+# Model Comparison & Best Model Selection - FOODS_1 Department
+
+## Objective
+The objective of this notebook was to compare the forecasting performance of Prophet, LightGBM, and ARIMA models and identify the most suitable model for retail demand forecasting and inventory optimization.
+
+## Models Evaluated
+1. Prophet
+2. LightGBM
+3. ARIMA
+
+## Evaluation Metrics
+The models were evaluated using:
+- Forecast Accuracy
+- Mean Absolute Percentage Error (MAPE)
+- Root Mean Squared Error (RMSE)
+- Mean Absolute Error (MAE)
+
+## Model Performance Summary
+
+| Model | Accuracy (%) | MAPE (%) | RMSE | MAE |
+|---------|---------:|---------:|---------:|---------:|
+| LightGBM | 92.59 | 7.41 | 328.54 | 234.92 |
+| Prophet | 87.05 | 12.95 | 472.83 | 368.30 |
+| ARIMA | 69.89 | 30.11 | 888.76 | 845.89 |
+
+## Key Findings
+- LightGBM achieved the highest forecasting accuracy.
+- LightGBM produced the lowest forecasting errors across all evaluation metrics.
+- Prophet delivered strong forecasting performance and captured trend and seasonality effectively.
+- ARIMA performed adequately but struggled during demand fluctuations and seasonal variations.
+
+## Business Impact
+Accurate demand forecasting helps:
+- Reduce stockout situations.
+- Minimize excess inventory costs.
+- Improve replenishment planning.
+- Support data-driven inventory decisions.
+- Enhance overall supply chain efficiency.
+
+## Final Model Selection
+
+**Selected Model: LightGBM**
+
+### Reasons for Selection
+- Highest Forecast Accuracy (92.59%)
+- Lowest MAPE (7.41%)
+- Lowest RMSE (328.54)
+- Lowest MAE (234.92)
+
+## Conclusion
+Based on comprehensive model evaluation, LightGBM was identified as the best-performing forecasting model for the FOODS_1 department. The model demonstrated superior predictive accuracy and lower forecasting errors compared to Prophet and ARIMA. Therefore, LightGBM is recommended as the final forecasting model for demand forecasting and inventory optimization in this project.
+
+---
+
