@@ -500,7 +500,7 @@ LightGBM achieved significantly better forecasting performance than Prophet and 
 
 ---
 
-# ARIMA Forecasting - FOODS_1 Department
+# Day 9 :- Phase-9 : ARIMA Forecasting - FOODS_1 Department
 
 ## Objective
 The objective of this notebook was to build a time-series forecasting model using ARIMA (AutoRegressive Integrated Moving Average) for the FOODS_1 department and evaluate its forecasting performance on unseen sales data.
@@ -534,7 +534,7 @@ ARIMA provided a baseline forecasting benchmark for the FOODS_1 department. Alth
 
 ---
 
-# Model Comparison & Best Model Selection - FOODS_1 Department
+# Day 10 :- Phase 10 :- Model Comparison & Best Model Selection - FOODS_1 Department
 
 ## Objective
 The objective of this notebook was to compare the forecasting performance of Prophet, LightGBM, and ARIMA models and identify the most suitable model for retail demand forecasting and inventory optimization.
@@ -585,6 +585,72 @@ Accurate demand forecasting helps:
 
 ## Conclusion
 Based on comprehensive model evaluation, LightGBM was identified as the best-performing forecasting model for the FOODS_1 department. The model demonstrated superior predictive accuracy and lower forecasting errors compared to Prophet and ARIMA. Therefore, LightGBM is recommended as the final forecasting model for demand forecasting and inventory optimization in this project.
+
+---
+
+# Day 11 :- Phase 11: Power BI Dashboard Development & Business Insights
+
+## Objective
+The objective of this phase was to transform forecasting results into interactive business dashboards using Power BI and present actionable inventory optimization insights.
+
+## Dashboards Developed
+
+### Dashboard 1: Executive Overview
+- Total Sales KPI
+- Average Daily Sales KPI
+- Forecast Accuracy KPI
+- Best Model KPI
+- Forecast Horizon KPI
+- Historical Sales Trend
+- Monthly Sales Distribution
+- Forecast Model Accuracy Comparison
+
+### Dashboard 2: Forecasting Analysis
+- Prophet Forecast Accuracy
+- LightGBM Forecast Accuracy
+- ARIMA Forecast Accuracy
+- Best Model Indicator
+- Forecast Horizon Indicator
+- Actual vs Predicted Sales (Prophet)
+- Actual vs Predicted Sales (LightGBM)
+- Actual vs Predicted Sales (ARIMA)
+
+### Dashboard 3: Model Performance Comparison
+- Highest Accuracy
+- Lowest MAPE
+- Lowest RMSE
+- Lowest MAE
+- Best Forecasting Model
+- Accuracy Comparison Chart
+- MAPE Comparison Chart
+- RMSE & MAE Comparison Chart
+
+### Dashboard 4: Inventory Optimization Insights
+- Recommended Model KPI
+- Forecast Accuracy KPI
+- Forecast Horizon KPI
+- Average Daily Demand KPI
+- Forecast MAPE KPI
+- 30-Day Forecast Demand Trend
+- Actual vs Forecast Demand
+- Inventory Optimization Recommendations
+
+## Final Model Results
+
+| Model | Accuracy | MAPE | RMSE | MAE |
+|---------|---------|---------|---------|---------|
+| LightGBM | 92.59% | 7.41% | 328.54 | 234.92 |
+| Prophet | 87.05% | 12.95% | 472.83 | 368.30 |
+| ARIMA | 69.89% | 30.11% | 888.76 | 845.89 |
+
+## Key Findings
+- LightGBM achieved the highest forecasting accuracy.
+- LightGBM produced the lowest forecasting errors.
+- Forecast-driven inventory planning can reduce stockouts and overstock situations.
+- The dashboard provides a complete business view from demand forecasting to inventory optimization.
+
+## Status
+Power BI Dashboard Development Completed Successfully.
 
 ---
 
